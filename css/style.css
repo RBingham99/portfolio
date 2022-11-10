@@ -1,0 +1,247 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Masaaki, "VCR OSD Mono", Calibri, Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --main-backgroud-colour: #86942A;
+    --secondary-background-colour: #507642;
+    --accent-colour: #F3F4EC;
+}
+
+a {
+    color: #F3F4EC;
+}
+
+h2 {
+    font-size: 2rem;
+    text-decoration: underline;
+    margin: 0;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+body {
+    background-color: var(--main-backgroud-colour);
+    width: 100%;
+}
+
+nav {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    background-color: var(--secondary-background-colour);
+    border-bottom: 6px double var(--accent-colour);
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+nav a {
+    padding: 0.25rem 0.5rem 0.5rem 0.5rem;
+    border: 6px double var(--accent-colour);
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
+#about {
+    padding: 4rem 0 0 0;
+}
+
+.about {
+    margin: 5rem 1rem 0 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    background-color: var(--secondary-background-colour);
+    color: var(--accent-colour);
+    border: 6px double var(--accent-colour);
+    border-radius: 0.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#avatar {
+    padding-top: 1rem;
+    width: 50%;
+    height: auto;
+}
+
+.about h2 {
+    padding-top: 1rem;
+}
+
+.about p {
+    margin: 1rem;
+}
+
+.about .githubLogo {
+    padding-right: 0.5rem;
+    width: 10%;
+    height: auto;
+}
+
+.github {
+    font-size: 2.5rem;
+    display: flex;
+}
+
+.githubLogo {
+    padding-right: 0.5rem;
+    width: 25%;
+    height: auto;
+}
+
+#portfolio {
+    padding-top: 6rem;
+}
+
+.portfolio {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+}
+
+.project {
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    margin: 1rem;
+    border: 6px double var(--accent-colour);
+    border-radius: 0.5rem;
+    background-color: var(--secondary-background-colour);
+    color: var(--accent-colour);
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+}
+
+.projectImage {
+    width: 50%;
+    height: auto;
+}
+
+.projectText {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.projectText a {
+    margin-bottom: 1rem;
+}
+
+#contact {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: var(--secondary-background-colour);
+    color: var(--accent-colour);
+    border-top: 6px double var(--accent-colour);
+    display: flex;
+    flex-direction: column;
+}
+
+#contact p {
+    margin: 1rem 1rem 2rem 1rem;
+}
+
+@media only screen and (min-width: 500px) {
+
+    nav a {
+        font-size: 2rem;
+    }
+
+    #aboutText h2 {
+        font-size: 3rem;
+    }
+
+    #aboutText p {
+        font-size: 2rem;
+    }
+
+    .portfolio {
+        align-items: center;
+    }
+
+    .project {
+        width: 90%;
+    }
+
+    .projectText h2 {
+        font-size: 3rem;
+    }
+
+    .projectText p {
+        font-size: 2rem;
+    }
+
+    #contact h2 {
+        font-size: 3rem;
+    }
+
+    #contact p {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+
+    nav {
+        font-size: 2rem;
+    }
+
+    #portfolio {
+        padding-top: 1rem;
+    }
+
+    .portfolio {
+        padding-top: 7rem;
+        flex-direction: row;
+        column-gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .project {
+        width: 43%;
+        font-size: 2rem;
+    }
+
+    .project p {
+        font-size: 2rem;
+    }
+
+    .about {
+        flex-direction: row;
+        padding: 0 1rem 1rem 1rem;
+        margin-top: 8rem;
+    }
+
+    #aboutText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 3rem;
+    }
+
+    .about h2 {
+        font-size: 3rem;
+    }
+
+    .about p {
+        font-size: 2rem;
+    }
+
+    #contact p {
+        font-size: 2rem;
+    }
+}
