@@ -28,6 +28,14 @@ body {
     width: 100%;
 }
 
+.bg-image {
+    background-image: url("../images/tree.png");
+    background-color: var(--main-backgroud-colour);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 nav {
     padding: 0.5rem;
     font-size: 1.5rem;
